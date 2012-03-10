@@ -1,0 +1,130 @@
+<!DOCTYPE html> 
+<html>
+	<head> 
+		<meta charset="utf-8" />
+		<title>LaRousse FAQ page</title> 
+		<link rel="stylesheet" href="style.css" /> 
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script src="jquery.scrollTo-1.4.2-min.js"></script>
+		<script src="jquery.localscroll-1.2.7-min.js"></script>
+		<!-- Resources Used 
+		--> 
+		<script>
+			$(document).ready(function () {  
+
+				var sidebar = $('#sidebar_content');
+				var top = sidebar.offset().top - parseFloat(sidebar.css('marginTop'));
+
+				$(window).scroll(function (event) {
+					var ypos = $(this).scrollTop();
+					if (ypos >= top) {
+						sidebar.addClass('fixed');
+					}
+					else {
+						sidebar.removeClass('fixed');
+					}
+				});
+
+				$.localScroll();
+				
+			});
+			
+		</script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<h1 id="title">LaRousse FAQ page</h1>
+			<hr>
+			<div id="primary">
+				<h3 id="1">Requirement 1</h3>
+				<ul class="section_menu">
+					<li><a href="#1_1">Lectus massa adipiscing, mattis. Turpis integer massa.</a></li>
+					<li><a href="#1_2">Integer enim montes mauris, arcu est.</a></li>
+					
+				</ul>
+				<dl class="faq">
+				  <dt id="1_1">Lectus massa adipiscing, mattis. Turpis integer massa.</dt>
+				    <dd>Ultricies in mus, magna rhoncus augue, nec magnis facilisis integer ut pellentesque aliquam sit! Enim odio, porta augue, sed turpis dolor ultrices porttitor arcu massa cum elementum hac in vel, magna magnis, enim scelerisque? Amet aliquam, magna dis porta platea. Cras aliquet. Arcu mid eros aenean parturient cras ac egestas tempor? Lundium parturient dapibus, ridiculus ridiculus dapibus! Quis eros amet.</dd>
+				  <dt id="1_2">Integer enim montes mauris, arcu est.</dt>
+				    <dd>Et ridiculus vut dis vel integer pid? Adipiscing nec tristique dictumst tristique duis rhoncus sed, scelerisque. Porta, diam augue vel augue porta enim. Et! Tristique montes. Auctor! Pid tristique purus montes. Quis? Sit, enim. Egestas! Tristique amet mattis adipiscing, proin elit adipiscing integer! Enim, odio. Etiam ac, nunc est purus turpis. Nunc! Pid cras scelerisque mid habitasse. Cum magnis.</dd>
+				</dl>
+				<h3 id="2">Requirement 2</h3>
+				<ul class="section_menu">
+					<li><a href="#2_1">Lectus massa adipiscing, mattis. Turpis integer massa.</a></li>
+					<li><a href="#2_2">Integer enim montes mauris, arcu est.</a></li>
+				
+				</ul>
+				<dl class="faq">
+				  <dt id="2_1">Lectus massa adipiscing, mattis. Turpis integer massa.</dt>
+				    <dd>Ultricies in mus, magna rhoncus augue, nec magnis facilisis integer ut pellentesque aliquam sit! Enim odio, porta augue, sed turpis dolor ultrices porttitor arcu massa cum elementum hac in vel, magna magnis, enim scelerisque? Amet aliquam, magna dis porta platea. Cras aliquet. Arcu mid eros aenean parturient cras ac egestas tempor? Lundium parturient dapibus, ridiculus ridiculus dapibus! Quis eros amet.</dd>
+				  <dt id="2_2">Integer enim montes mauris, arcu est.</dt>
+				    <dd>Et ridiculus vut dis vel integer pid? Adipiscing nec tristique dictumst tristique duis rhoncus sed, scelerisque. Porta, diam augue vel augue porta enim. Et! Tristique montes. Auctor! Pid tristique purus montes. Quis? Sit, enim. Egestas! Tristique amet mattis adipiscing, proin elit adipiscing integer! Enim, odio. Etiam ac, nunc est purus turpis. Nunc! Pid cras scelerisque mid habitasse. Cum magnis.</dd>
+				 
+				</dl>
+				<h3 id="3">Requirement 3</h3>
+				<ul class="section_menu">
+					<li><a href="#3_1">Lectus massa adipiscing, mattis. Turpis integer massa.</a></li>
+					<li><a href="#3_2">Integer enim montes mauris, arcu est.</a></li>
+					
+				</ul>
+				<dl class="faq">
+				  <dt id="3_1">Lectus massa adipiscing, mattis. Turpis integer massa.</dt>
+				    <dd>Ultricies in mus, magna rhoncus augue, nec magnis facilisis integer ut pellentesque aliquam sit! Enim odio, porta augue, sed turpis dolor ultrices porttitor arcu massa cum elementum hac in vel, magna magnis, enim scelerisque? Amet aliquam, magna dis porta platea. Cras aliquet. Arcu mid eros aenean parturient cras ac egestas tempor? Lundium parturient dapibus, ridiculus ridiculus dapibus! Quis eros amet.</dd>
+				  <dt id="3_2">Integer enim montes mauris, arcu est.</dt>
+				    <dd>Et ridiculus vut dis vel integer pid? Adipiscing nec tristique dictumst tristique duis rhoncus sed, scelerisque. Porta, diam augue vel augue porta enim. Et! Tristique montes. Auctor! Pid tristique purus montes. Quis? Sit, enim. Egestas! Tristique amet mattis adipiscing, proin elit adipiscing integer! Enim, odio. Etiam ac, nunc est purus turpis. Nunc! Pid cras scelerisque mid habitasse. Cum magnis.</dd>
+				  
+				</dl>
+				<h3 id="4">Requirement 4</h3>
+				<ul class="section_menu">
+					<li><a href="#4_1">Lectus massa adipiscing, mattis. Turpis integer massa.</a></li>
+					<li><a href="#4_2">Integer enim montes mauris, arcu est.</a></li>
+					
+				</ul>
+				<dl class="faq">
+				  <dt id="4_1">Lectus massa adipiscing, mattis. Turpis integer massa.</dt>
+				    <dd>Ultricies in mus, magna rhoncus augue, nec magnis facilisis integer ut pellentesque aliquam sit! Enim odio, porta augue, sed turpis dolor ultrices porttitor arcu massa cum elementum hac in vel, magna magnis, enim scelerisque? Amet aliquam, magna dis porta platea. Cras aliquet. Arcu mid eros aenean parturient cras ac egestas tempor? Lundium parturient dapibus, ridiculus ridiculus dapibus! Quis eros amet.</dd>
+				  <dt id="4_2">Integer enim montes mauris, arcu est.</dt>
+				    <dd>Et ridiculus vut dis vel integer pid? Adipiscing nec tristique dictumst tristique duis rhoncus sed, scelerisque. Porta, diam augue vel augue porta enim. Et! Tristique montes. Auctor! Pid tristique purus montes. Quis? Sit, enim. Egestas! Tristique amet mattis adipiscing, proin elit adipiscing integer! Enim, odio. Etiam ac, nunc est purus turpis. Nunc! Pid cras scelerisque mid habitasse. Cum magnis.</dd>
+				</dl>
+				<h3 id="5">Requirement 5</h3>
+				<ul class="section_menu">
+					<li><a href="#5_1">Lectus massa adipiscing, mattis. Turpis integer massa.</a></li>
+					<li><a href="#5_2">Integer enim montes mauris, arcu est.</a></li>
+					
+				</ul>
+				<dl class="faq">
+				  <dt id="5_1">Lectus massa adipiscing, mattis. Turpis integer massa.</dt>
+				    <dd>Ultricies in mus, magna rhoncus augue, nec magnis facilisis integer ut pellentesque aliquam sit! Enim odio, porta augue, sed turpis dolor ultrices porttitor arcu massa cum elementum hac in vel, magna magnis, enim scelerisque? Amet aliquam, magna dis porta platea. Cras aliquet. Arcu mid eros aenean parturient cras ac egestas tempor? Lundium parturient dapibus, ridiculus ridiculus dapibus! Quis eros amet.</dd>
+				  <dt id="5_2">Integer enim montes mauris, arcu est.</dt>
+				    <dd>Et ridiculus vut dis vel integer pid? Adipiscing nec tristique dictumst tristique duis rhoncus sed, scelerisque. Porta, diam augue vel augue porta enim. Et! Tristique montes. Auctor! Pid tristique purus montes. Quis? Sit, enim. Egestas! Tristique amet mattis adipiscing, proin elit adipiscing integer! Enim, odio. Etiam ac, nunc est purus turpis. Nunc! Pid cras scelerisque mid habitasse. Cum magnis.</dd>
+				</dl>
+				<h3 id="6">Requirement 6</h3>
+				<ul class="section_menu">
+					<li><a href="#6_1">Lectus massa adipiscing, mattis. Turpis integer massa.</a></li>
+					<li><a href="#6_2">Integer enim montes mauris, arcu est.</a></li>
+					
+				</ul>
+				<dl class="faq">
+				  <dt id="6_1">Lectus massa adipiscing, mattis. Turpis integer massa.</dt>
+				    <dd>Ultricies in mus, magna rhoncus augue, nec magnis facilisis integer ut pellentesque aliquam sit! Enim odio, porta augue, sed turpis dolor ultrices porttitor arcu massa cum elementum hac in vel, magna magnis, enim scelerisque? Amet aliquam, magna dis porta platea. Cras aliquet. Arcu mid eros aenean parturient cras ac egestas tempor? Lundium parturient dapibus, ridiculus ridiculus dapibus! Quis eros amet.</dd>
+				  <dt id="6_2">Integer enim montes mauris, arcu est.</dt>
+				    <dd>Et ridiculus vut dis vel integer pid? Adipiscing nec tristique dictumst tristique duis rhoncus sed, scelerisque. Porta, diam augue vel augue porta enim. Et! Tristique montes. Auctor! Pid tristique purus montes. Quis? Sit, enim. Egestas! Tristique amet mattis adipiscing, proin elit adipiscing integer! Enim, odio. Etiam ac, nunc est purus turpis. Nunc! Pid cras scelerisque mid habitasse. Cum magnis.</dd>
+				</dl>
+			</div>
+			<div id="sidebar">
+				<div id="sidebar_content">
+					<h3>Requirements</h3>
+					<ul class="section_menu">
+						<li><a href="#1">Requirement 1</a></li>
+						<li><a href="#2">Requirement 2</a></li>
+						<li><a href="#3">Requirement 3</a></li>
+						<li><a href="#4">Requirement 4</a></li>
+						<li><a href="#5">Requirement 5</a></li>
+						<li><a href="#6">Requirement 6</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
