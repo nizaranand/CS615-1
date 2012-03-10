@@ -1,7 +1,3 @@
-/* Author:
-
-*/
-
 $(document).ready(function(){
 
 	$('#innerMenu').hide();
@@ -21,15 +17,11 @@ $(document).ready(function(){
   	$('#outerMenu').hover(
   		function () {
     		//alert('on');
-    		$('#innerMenu').show();
+    		$('#innerMenu').show('slow');
   		}, 
   		function () {
     		//alert('out');
-    		$('#innerMenu').hide();
+    		$('#innerMenu').hide('slow');
   	}); 
 
 });
-	
-
-
-
